@@ -10,7 +10,7 @@ st.markdown("Trả lời các câu hỏi dưới đây để AI phân tích th�
 try:
     api_key = st.secrets["GEMINI_API_KEY"]
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('gemini-1.5-flash')
 except:
     st.error("Chưa cấu hình API Key bảo mật!")
     st.stop()
